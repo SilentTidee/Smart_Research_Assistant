@@ -1,0 +1,32 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Project-specific generated folders
+smart_research_assistant_project/.venv/
+smart_research_assistant_project/__pycache__/
+smart_research_assistant_project/smart_research_assistant/__pycache__/
+smart_research_assistant_project/smart_research_assistant.egg-info/

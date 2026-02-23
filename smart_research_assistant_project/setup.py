@@ -1,0 +1,37 @@
+from setuptools import setup, find_packages
+setup(
+    name='smart_research_assistant',
+    version='0.1.0',
+    packages=find_packages(),
+    install_requires=[
+        "langchain>=0.1.0",
+        "langchain-openai>=0.0.5",
+        "langchain-community>=0.0.10",
+        "langchain-core>=0.1.10",
+        "langchain-text-splitters>=0.0.1",
+        "langgraph>=0.0.20",
+        "langsmith>=0.0.69",
+        "openai>=1.3.0",
+        "fastapi>=0.110.0",
+        "uvicorn>=0.27.0",
+        "langserve>=0.0.40",
+        "sse-starlette>=2.0.0",
+        "chromadb>=0.4.18",
+        "beautifulsoup4>=4.12.2",
+        "lxml>=4.9.3",
+        "python-dotenv>=1.0.0",
+        "pydantic>=2.5.2",
+        "typing-extensions>=4.8.0",
+        "tqdm>=4.66.0",
+    ],
+    entry_points={
+        'console_scripts': [
+            "research-assistant=smart_research_assistant.main:main",
+        ],
+    },
+    author="vipin yadav",
+    author_email="vyad827323@gmail.com",
+    description="A smart research assistant using LangChain, LangGraph, and LangSmith.",
+    keywords="ai, research, langchain, langgraph, langsmith",
+    python_requires=">=3.9",
+) 
